@@ -10,6 +10,7 @@ public class DestroyGameObject : MonoBehaviour
         if (other.gameObject)
         {
             Destroy(other.gameObject);
+            GameManager.Instance.GameOver();
         }
     }
 }

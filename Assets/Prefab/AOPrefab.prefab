@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8293123371362987023}
   - component: {fileID: 8293123371362987020}
   - component: {fileID: 8293123371362987021}
+  - component: {fileID: 2076859079677256931}
   m_Layer: 0
   m_Name: AOPrefab
   m_TagString: Untagged
@@ -283,3 +284,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2076859079677256931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8293123371362987018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f4f4542e6b5144b890a864ad9fb973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dragspeed: 120
+  _stillnessThreshold: 0.01
+  _stillnessTime: 1
