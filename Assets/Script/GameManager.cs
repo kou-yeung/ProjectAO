@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     
     [SerializeField]private DropObject[] _dropObject;
     [SerializeField] private GameObject _gameOverPopUp;
+    [SerializeField] private GameObject _targetcameraPos;
 
     private float highestPoint = 0;
     public float HighestPoint1 => highestPoint;
@@ -31,6 +32,9 @@ public class GameManager : MonoBehaviour
     
     public void GameStart()
     {
+        Vector3 position = _targetcameraPos.transform.position;
+        position.y = highestPoint + 3f;
+        _targetcameraPos.transform.position = position;
         Spawn(highestPoint);
     }
 
@@ -44,6 +48,9 @@ public class GameManager : MonoBehaviour
             if (animalHeight >= highestPoint)
             {
                 highestPoint = animalHeight; // 最高点を更新
+                Vector3 position = _targetcameraPos.transform.position;
+                position.y = highestPoint + 3f;
+                _targetcameraPos.transform.position = position;
                 Spawn(highestPoint); // 新しい動物をスポーン
             }
             else if (animalHeight <= highestPoint)
