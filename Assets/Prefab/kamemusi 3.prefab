@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8397759230123311240}
   - component: {fileID: 7690104567486359235}
   - component: {fileID: 1168216528392877751}
-  - component: {fileID: -5636719718770795367}
+  - component: {fileID: 3752599245113360969}
   m_Layer: 0
-  m_Name: kamemusi
+  m_Name: kamemusi 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2f13fe98fd192c44e825f10a60661219, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0809db772f113e54998e83f6698db2eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   _dragspeed: 120
   _stillnessThreshold: 0.01
   _stillnessTime: 1
---- !u!60 &-5636719718770795367
+--- !u!60 &3752599245113360969
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

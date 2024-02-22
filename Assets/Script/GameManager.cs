@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("スポーンしたよ");
         int i = Random.Range(0, _dropObject.Length);
-        _nowGameObject = Instantiate(_dropObject[i], new Vector3(0, height + 1.5f, 0), Quaternion.identity);
+        _nowGameObject = Instantiate(_dropObject[i], new Vector3(0, height + 1.5f, 0), _dropObject[i].transform.rotation);
     }
     
     public void GameOver()

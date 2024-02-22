@@ -622,10 +622,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dropObject:
+  - {fileID: 2076859079677256931, guid: de6bcbc22a4fc4dacb31b97561ff91ec, type: 3}
   - {fileID: 2076859079677256931, guid: da60cd76b305f3746acc955f02829973, type: 3}
+  - {fileID: 2076859079677256931, guid: fffb8414faf714d2a989eedca3337e87, type: 3}
+  - {fileID: 2076859079677256931, guid: 6a22312beb15e4e32b36b97a08fb84f5, type: 3}
   - {fileID: 1168216528392877751, guid: 83981ee5882a37641bce474a3f9bae3c, type: 3}
   - {fileID: 1168216528392877751, guid: 2caa5b36b11714a77929484cf1e28450, type: 3}
-  - {fileID: 2076859079677256931, guid: de6bcbc22a4fc4dacb31b97561ff91ec, type: 3}
+  - {fileID: 1168216528392877751, guid: bf4a4bb1b94f8414faa3c4b0912f8aa2, type: 3}
+  - {fileID: 1168216528392877751, guid: c8ec9f10ac36c4037936f9cf380e514d, type: 3}
   _gameOverPopUp: {fileID: 1320514211}
   _targetcameraPos: {fileID: 217415508}
 --- !u!4 &439437169
