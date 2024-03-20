@@ -13,9 +13,14 @@ public class GameManager : MonoBehaviour
     [SerializeField]private DropObject[] _dropObject;
     [SerializeField] private GameObject _gameOverPopUp;
     [SerializeField] private GameObject _targetcameraPos;
+    [SerializeField] private int _addScore = 10;
 
-    private float highestPoint = 0;
-    public float HighestPoint1 => highestPoint;
+    private float _highestPoint = 0;
+    public float HighestPoint1 => _highestPoint;
+
+    private int _score = 0;
+    
+    public int Score => _score;
     //  最高点
     private DropObject _nowGameObject;
     private Transform _generatePosition;
@@ -32,10 +37,11 @@ public class GameManager : MonoBehaviour
     
     public void GameStart()
     {
+        _score = 0;
         Vector3 position = _targetcameraPos.transform.position;
-        position.y = highestPoint + 3f;
+        position.y = _highestPoint + 3f;
         _targetcameraPos.transform.position = position;
-        Spawn(highestPoint);
+        Spawn(_highestPoint);
     }
 
     // Update is called once per frame
@@ -45,17 +51,18 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("動いたよ");
             float animalHeight = _nowGameObject.transform.position.y;
-            if (animalHeight >= highestPoint)
+            _score += _addScore;
+            if (animalHeight >= _highestPoint)
             {
-                highestPoint = animalHeight; // 最高点を更新
+                _highestPoint = animalHeight; // 最高点を更新
                 Vector3 position = _targetcameraPos.transform.position;
-                position.y = highestPoint + 3f;
+                position.y = _highestPoint + 3f;
                 _targetcameraPos.transform.position = position;
-                Spawn(highestPoint); // 新しい動物をスポーン
+                Spawn(_highestPoint); // 新しい動物をスポーン
             }
-            else if (animalHeight <= highestPoint)
+            else if (animalHeight <= _highestPoint)
             {
-                Spawn(highestPoint);
+                Spawn(_highestPoint);
             }
         }
     }
