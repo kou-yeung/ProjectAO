@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Ranking : MonoBehaviour
 {
     [SerializeField]
-    private TMP_InputField _nameText = default;
+    private InputField _nameText = default;
     
     [SerializeField]
     private TMP_Text _eroorText = default;
