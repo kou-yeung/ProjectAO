@@ -43,7 +43,7 @@ public class GetRanking : MonoBehaviour
         //result.Leaderboardに各順位の情報(PlayerLeaderboardEntry)が入っている
         _rankingText.text = "";
         foreach (var entry in result.Leaderboard) {
-            _rankingText.text += $"\n順位 : {entry.Position + 1}, スコア : {entry.StatValue}, \n名前 : {entry.DisplayName}";
+            _rankingText.text += $"\n順位 : {entry.Position + 1}, スコア : {entry.StatValue}";
         }
     }
 
